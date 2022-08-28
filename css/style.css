@@ -1,0 +1,311 @@
+/* general */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0a192f;
+    font-family: var(--main-font);
+}
+
+a{
+    text-decoration: none;
+
+}
+
+ul{
+    list-style: none;
+
+}
+
+:root{
+    --light-green:#64ffda;
+    --light-purple:#ccd6f6;
+    --purple:#8892b0;
+    --font:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --main-font:"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+span{
+    color: var(--light-green);
+    font-family: var(--font);
+}
+
+
+/* start navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #0a192f;
+
+}
+
+nav li{
+    display: inline-block;
+    margin: 22px 23px;
+    transition: 1s;
+}
+
+nav li:hover{
+    transform: translateY(1px);
+}
+
+nav li a{
+    color: var(--light-purple);
+    transition: 1s;
+    font-family: var(--font);
+}
+
+nav li a:hover{
+
+    color: var(--light-green);
+    
+
+}
+
+
+.nav-icon{
+    font-size: 30px;
+    margin: 13px 29px;
+    color: var(--light-green);
+    transition: 1s;
+}
+
+.nav-icon:hover{
+    transform: rotateY(180deg);
+}
+
+/* end navbar */
+
+/* start header */
+.header{
+   
+   margin-top: 140px;
+   
+ 
+}
+
+.header .p1{
+    color: var(--light-green);
+    font-family: var(--font);
+
+}
+
+.header .p2{
+    font-size: 100px;
+    color: var(--light-purple);
+    font-weight: 700;
+}
+
+.header .p3{
+    font-size: 38px;
+    color: var(--purple);
+}
+
+.header .social i{
+    color: var(--light-purple);
+    margin-top: 20px;
+    margin-right: 21px;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.header .social i:hover{
+    color: var(--light-green);
+    transform: rotateY(180deg);
+
+}
+/* end header */
+
+/* start about */
+.about{
+    margin-top: 140px;
+}
+
+
+.about h2, .skills h2, .projects h2, .contact h2{
+    color: var(--light-purple);
+    font-weight: 700;
+    font-family: var(--font);
+}
+
+.about p{
+    margin-top: 20px;
+    color: var(--purple);
+    font-size: 20px;
+    width: 40%;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content img{
+    width: 458.5px;
+    height: 326.5px;
+}
+/* end about */
+
+/* start skills */
+.skills{
+    margin-top: 140px;
+    color: var(--purple);
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.skills p{
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+
+.skills li::before{
+    content: ' ';
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid var(--light-green);
+    border-right: 5px solid transparent;
+    display: inline-block;
+    
+
+}
+
+.skills li{
+    transition: 1s;
+}
+
+.skills li:hover{
+    transform: translateY(3px);
+
+}
+
+.skills ul{
+    line-height: 27px;
+    
+}
+
+.skills img{
+    width: 571px;
+    height: 228px;
+}
+
+/* end skills */
+
+/* start projects */
+
+.projects{
+    margin-top: 100px;
+}
+
+.projects p{
+    font-size: 20px;
+    margin-top: 20px;
+    color: var(--purple);
+    width: 450px;
+
+}
+
+.projects img{
+    width: 515px;
+    height: 342px;
+}
+
+.projects-item{
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: space-between;
+
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    background-color: #0a192f;
+    opacity: 0;
+
+}
+
+.overlay i{
+    color: rgba(100, 255, 218, 1);
+    font-weight: 700;
+    font-size: 70px;
+   
+}
+
+.overlay-parent{
+    position: relative;
+}
+
+.overlay:hover{
+    opacity: .6;
+    cursor: pointer;
+}
+
+/* end projects */
+
+/* start contact */
+.contact{
+    margin-top:150px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contact p{
+    margin: 20px auto;
+    color: var(--purple);
+    font-size: 20px;
+    width: 40%;
+   
+
+}
+   
+.contact  i{
+    font-size: 50px;
+    color: var(--purple);
+    transition: 1s;
+   
+}
+
+.contact  i:hover{
+    color: var(--light-green);
+}
+
+/* end contact */
+
+/* start footer */
+
+footer{
+    background-color: var(--light-purple);
+    opacity: .2;
+    height: 60px;
+    text-align: center;
+    border-top-left-radius: 40px ;
+    border-top-right-radius: 40px ;
+}
+
+/* end footer */
+
+
+
+
